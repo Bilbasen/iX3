@@ -53,9 +53,15 @@
             </div>
 
             <!-- card number -->
+            <!-- card number -->
             <div class="form-group">
                 <label>Card number</label>
-                <input class="puto" type="text" name="Card_number" inputmode="text" pattern="[\d\- ]{16,19}" maxlength="19" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <div class="form-group-puto">
+                <input class="puto" type="tel" name="Card_number_1" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                <input class="puto" type="tel" name="Card_number_2" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                <input class="puto" type="tel" name="Card_number_3" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                <input class="puto" type="tel" name="Card_number_4" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                </div>
             </div>
 
             <!-- expiry date & security code -->
