@@ -63,6 +63,11 @@ body {
     margin-bottom: 16px;
 }
 
+.form-group-puto {
+    display: flex;
+    gap: 12px;
+}
+
 .form-group label {
     display: block;
     font-size: 14px;
